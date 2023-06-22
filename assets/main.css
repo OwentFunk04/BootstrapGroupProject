@@ -1,16 +1,23 @@
 *{
     margin: 0;
     padding: 0;
+}
+body {
+    background-image: url("CRSL3.jpeg");
+    /* filter: brightness(.5); */
     background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
 }
 .header img {
     width: 150px;
     height: auto;
-    margin: 1%;
+    margin: 2px 0 0 9px;
 }
 nav {
     display: flex;
-    padding: 1%;
+    padding: 1.5%;
     justify-content: space-between;
     align-items: center;
 }
@@ -29,27 +36,80 @@ nav {
 }
 .body{
     text-align: center;
+    padding: 275px 0;
 }
-.text {
+.bodylinks ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.bodylinks ul li a {
     color: white;
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid red;
+    background: red;
+    padding: 8px 25px;
+    position: relative;
+    cursor: pointer;
 }
-.container {
-    position: absolute;
+.bodylinks ul li a:hover {
+    border: 1px solid black;
+    background: black;
+    transition: .5s;
+}
+.text{
+    color: white;
+    font-family: sans-serif;
+}
+.text h1 {
+    font-size: 25px;
+    font-weight: 900;
+    padding: 0 0 10px 0;
+}
+.text h2 {
+    font-size: 18px;
+    font-weight: 900;
+    padding: 0 0 15px 0;
+}
+.footer {
+    position: fixed;
     left: 0;
-    top: 0;
-    height: 100vh;
-    width: 100vw;
-    animation: animate 16s ease-in-out infinite;
-    background-size: cover;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+.footer ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px; 
+    margin: 0;
 }
-@keyframes animate{
-    0%, 100%{
-        background-image: url(./CRSL1.jpeg);
-    }
-    33% {
-        background-image: url(./CRSL2.jpeg);
-    }
-    67%{
-        background-image: url(./CRSL3.jpeg);
-    }
+.footer ul li a {
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+}
+.collected {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    margin: 500px 0 0 0;
+}
+
+.collected img {
+    width: 350px;
+    height: auto;
+    background-color: black;
+    margin: 50px 0 50px 0;
 }
