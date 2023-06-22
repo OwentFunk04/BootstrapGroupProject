@@ -27,3 +27,29 @@ nav {
     font-weight: lighter;
     text-decoration: none;
 }
+.body{
+    text-align: center;
+}
+.text {
+    color: white;
+}
+.container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    animation: animate 16s ease-in-out infinite;
+    background-size: cover;
+}
+@keyframes animate{
+    0%, 100%{
+        background-image: url(./CRSL1.jpeg);
+    }
+    33% {
+        background-image: url(./CRSL2.jpeg);
+    }
+    67%{
+        background-image: url(./CRSL3.jpeg);
+    }
+}
